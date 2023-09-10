@@ -1,23 +1,28 @@
 // UpperCamelCase for Classes-Interfaces
 public class UpdatingVariables {
     public static void main(String[] args) {
-        int salary = 1000;
+        final String EMPLOYEE_NAME = "Santiago Molano";
+        int salaryBase = 1249898;
+        double retentions = 0.09;
 
-        final String CONSTANT_EXAMPLE = "Hello World";
+        salaryBase++;
+        System.out.println(salaryBase);
 
-        salary += 200;
 
-        System.out.println(salary);
+        // Incrementador Prefijo
+        salaryBase = 100 + ++salaryBase;
+        System.out.println(salaryBase);
 
         // LowerCamelCase for methods-variables
-        String employeeName = "Santiago Molano";
 
-        System.out.println(employeeName);
+        var finalSalary = salaryBase - (retentions * salaryBase);
+        var retentionsCast = (int) (retentions * 100);
 
-        employeeName = employeeName + " Holguin";
-
-        System.out.println(employeeName);
-
-        System.out.println(CONSTANT_EXAMPLE);
+        System.out.println("Name: " + EMPLOYEE_NAME);
+        System.out.println("Base salary: " + salaryBase);
+        System.out.println("Retentions: " + retentionsCast + "%");
+        System.out.println(" --- --- --- --- ");
+        System.out.println(" ");
+        System.out.println("Final salary: " + finalSalary);
     }
 }
