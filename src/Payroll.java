@@ -1,5 +1,5 @@
 // UpperCamelCase for Classes-Interfaces
-public class UpdatingVariables {
+public class Payroll {
     public static void main(String[] args) {
         final String EMPLOYEE_NAME = "Santiago Molano";
         int salaryBase = 1249898;
